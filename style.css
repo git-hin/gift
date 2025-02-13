@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #222; /* Adding a dark background to help the text stand out */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.message {
+  position: absolute; /* Keep the text positioned over the image */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2; /* Keep the text on top of the image */
+  color: white;
+}
+
+.message h1 {
+  font-size: 3em;
+  color: #ff4d88;
+  margin-bottom: 10px;
+}
+
+.message p {
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.heart-image {
+  max-width: 80%;  /* Limit the image width so it doesn't take up the entire screen */
+  border-radius: 10px;
+  z-index: 1; /* Place the image below the text */
+}
